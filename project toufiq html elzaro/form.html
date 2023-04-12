@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form</title>
+</head>
+
+<body>
+    <h1 style="text-align:center ;">Form1 input</h1>
+    <form action="">
+        <div>
+            <label for="">Username</label>
+            <input type="text">
+        </div>
+        <br>
+        <div>
+            <label for="">Password</label>
+            <input type="password">
+        </div><br>
+        <input type="submit">
+    </form>
+    <hr>
+    <!-- required palceholder value -->
+    <h1 style="text-align:center ;">Partie 2 required palceholder value</h1>
+    <form action="">
+        <div>
+            <input type="text" placeholder="usename" required>
+        </div><br>
+        <div>
+            <input type="text" placeholder="subject">
+        </div><br>
+        <div>
+            <input type="password" placeholder="passwor" required>
+        </div><br>
+        <div>
+            <input type="email" placeholder="email" value="toufiqelh@gmail.com">
+        </div><br>
+        <input type="submit" value="Save">
+    </form>
+    <hr>
+    <h1 style="text-align:center ;">Partie 3 method action name</h1>
+    <form action="toufiq.php" method="post">
+        <div>
+            <label for="">Username</label>
+            <input type="text" name="username">
+        </div><br>
+        <div>
+            <label for="">Subject</label>
+            <input type="text" name="subject">
+        </div><br>
+        <div>
+            <label for="">Password</label>
+            <input type="password" placeholder="write a password complex" name="password">
+        </div><br>
+        <div>
+            <label for="">email</label>
+            <input type="email" name="email">
+        </div><br>
+        <input type="submit">
+    </form>
+    <hr>
+    <h1 style="text-align:center ;">Partie 4 input hidden,Reset,Color,Range,Number</h1>
+    <form action="toufiq.php" method="post">
+        <div>
+            <label for="">Username</label>
+            <input type="text" name="username">
+        </div><br>
+        <div>
+            <label for="" hidden>code</label>
+            <input type="hidden" name="code" value="1234545566677766556665">
+        </div><br>
+        <div>
+            <label for="">Subject</label>
+            <input type="text" name="subject">
+        </div><br>
+        <div>
+            <label for="">Password</label>
+            <input type="password" placeholder="write a password complex" name="password">
+        </div><br>
+        <div>
+            <label for="">email</label>
+            <input type="email" name="email">
+        </div><br>
+        <div>
+            <label for="">Color</label>
+            <input type="color" name="Color">
+        </div><br>
+        <div>
+            <label for="">Range</label>
+            <input type="range" name="Range" min="0" max="100" step="20" value="20">
+        </div><br>
+        <div>
+            <label for="">Number</label>
+            <input type="number" name="Number" min="0" max="100" step="10" value="10">
+        </div><br>
+        <input type="submit" value="Save">
+        <input type="reset" value="Reset">
+    </form>
+    <hr>
+    <h1 style="text-align:center ;">Partie 5 Readonly,disabled,Autofocus,minlenght,maxlenght</h1>
+    <form action="toufiq.php" method="get">
+        <div>
+            <label for="">Username</label>
+            <input type="text" name="username" value="toufiq" readonly>
+        </div><br>
+        <div>
+            <label for="" hidden>code</label>
+            <input type="hidden" name="code" value="1234545566677766556665">
+        </div><br>
+        <div>
+            <label for="">Subject</label>
+            <input type="text" name="subject" autofocus>
+        </div><br>
+        <div>
+            <label for="">Password</label>
+            <input type="password" placeholder="write a password complex" name="password" minlength="10" maxlength="20">
+        </div><br>
+        <div>
+            <label for="">email</label>
+            <input type="email" name="email" value="toufiq@123" disabled>
+        </div><br>
+        <div>
+            <label for="">Color</label>
+            <input type="color" name="Color">
+        </div><br>
+        <div>
+            <label for="">Range</label>
+            <input type="range" name="Range" min="0" max="100" step="20" value="20">
+        </div><br>
+        <div>
+            <label for="">Number</label>
+            <input type="number" name="Number" min="0" max="100" step="10" value="10">
+        </div><br>
+        <input type="submit" value="Save">
+        <input type="reset" value="Reset">
+    </form>
+    <hr>
+    <h1 style="text-align: center;">form Partie 6 Radio checkbox,atturbute checked for id</h1>
+    <form action="">
+        <div>
+            <input type="radio" name="os" value="windows" id="win" checked>
+            <label for="win">windows</label>
+        </div><br>
+        <div>
+            <input type="radio" name="os" value="linux" id="lin">
+            <label for="lin">linux</label>
+        </div><br>
+        <div>
+            <input type="radio" name="os" value="Mac" id="Ma">
+            <label for="Ma">Mac</label>
+        </div>
+        <input type="submit">
+        <hr>
+        <div>
+            <input type="checkbox" name="os" value="windows" id="win1" checked>
+            <label for="win1">windows</label>
+        </div><br>
+        <div>
+            <input type="checkbox" name="os" value="linux" id="lin1">
+            <label for="lin1">linux</label>
+        </div><br>
+        <div>
+            <input type="checkbox" name="os" value="Mac" id="Ma1">
+            <label for="Ma1">Mac</label>
+        </div>
+        <input type="submit">
+    </form>
+    <hr>
+    <h1 style="text-align: center;">form Partie 7 select textarea ,atturbute selected muntiple</h1>
+    <form action="">
+        <label for="book">choix une book</label>
+        <select name="bo" id="book">
+            <option value="b1">book 1</option>
+            <option value="b2">book 2</option>
+            <option value="b3" selected>book 3</option>
+        </select>
+        <input type="submit">
+        <hr>
+        <label for="book2">choix book 2:</label>
+        <select name="b" id="book2" multiple>
+            <optgroup label="book love">
+                <option value="1">b1</option>
+                <option value="2">b2</option>
+            </optgroup>
+            <optgroup label="book love">
+                <option value="3" selected>b3</option>
+                <option value="4">b4</option>
+            </optgroup>
+            <input type="submit">
+        </select>
+        <hr>
+        <!-- textarea -->
+        <textarea name="" id="" cols="30" rows="10" placeholder="test test ........."></textarea>
+    </form>
+    <hr>
+    <h1 style="text-align: center;">form Partie 8 file,serach,Url,time</h1>
+    <form action="">
+        <div>
+            <label for="">Upload</label>
+            <input type="file">
+        </div><br>
+        <div>
+            <label for="">serach</label>
+            <input type="search">
+        </div>
+    </form>
+    <hr>
+    <h1 style="text-align: center;">form Partie 9 novalidite,target,dataliste</h1>
+    <form action="" novalidate target="_blank">
+        <div>
+            <label for="">usename</label>
+            <input type="text" name="usename">
+        </div>
+        <div><br>
+            <label for="">subject</label>
+            <input type="text" name="subject">
+        </div>
+        <div><br>
+         <input list="programming" name="list">
+         <datalist id="programming">
+            <option value="python"></option>
+            <option value="c#"></option>
+            <option value="php"></option>
+            <option value="c++"></option>
+            <option value="java"></option>
+         </datalist>
+
+        </div>
+        <input type="submit">
+    </form>
+    <hr>
+    
+    
+</body>
+
+</html>
